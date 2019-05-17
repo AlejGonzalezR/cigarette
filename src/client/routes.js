@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Index from './App'
+import Nav from './Nav'
 /* import Buscar from './view/Buscar/Busqueda'
 import Generos from './view/Generos/Generos'
 import LogIn from '../client/view/Login/LogIn'
@@ -17,6 +18,7 @@ const AppRouter = () =>
 
     <Switch>
        <Route path="/" exact component={Index}/>
+       <Route path="/nav" exact component={Nav}/>
         {/* <Route path="/inicio" exact component={Generos} />
         <Route path="/buscar"exact={true}  replace={true}  component={Buscar} />
         <Route path="/registro" component={Registro} /> 
