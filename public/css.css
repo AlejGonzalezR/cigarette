@@ -1,6 +1,41 @@
-.navbar-brand
-    {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+.hola{
+    background-size: cover;
+    background-image: url("img/portada.jpg") !important;
+    background-position-x: center;
+    background-position-y: center;
+}
+@media (max-width: 575.98px) {
+    .navbar-brand{
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-50%);
     }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar-brand{
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-50%);
+    }
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar-brand{
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(-50%);
+    } 
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+
+@media (min-width: 1200px) { 
+
+ }
