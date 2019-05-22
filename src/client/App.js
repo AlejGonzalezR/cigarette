@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import NavMovil from './NavMovil';
+import NavWeb from './NavWeb';
+import Portada from './Portada';
 
 
 export default class App extends Component {
@@ -10,15 +13,12 @@ export default class App extends Component {
      };
 	render() {
 		return (
-			<div>
-               
-                <div className="row">
-                <div className="col-md-5">
-				<center>
-					<h1>Palace Resorts</h1>
-					<h1>Books</h1>
-				</center>
-                </div>
+			
+            <div>
+                <div className="cover-portada">
+                <NavWeb></NavWeb>
+                <NavMovil></NavMovil>
+                <Portada></Portada>
                 </div>
 			</div>
         );
