@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Index from './App'
-import NavWeb from './NavWeb'
+import NavWeb from './Contenido'
 /* import Buscar from './view/Buscar/Busqueda'
 import Generos from './view/Generos/Generos'
 import LogIn from '../client/view/Login/LogIn'

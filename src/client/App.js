@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavMovil from './NavMovil';
 import NavWeb from './NavWeb';
 import Portada from './Portada';
+import Contenido from './Contenido';
 
 
 export default class App extends Component {
@@ -20,6 +21,7 @@ export default class App extends Component {
                 <NavMovil></NavMovil>
                 <Portada></Portada>
                 </div>
+                <Contenido></Contenido>
 			</div>
         );
         

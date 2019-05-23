@@ -1,13 +1,49 @@
+body{
+   background-color:  #D4D3C3;
+}
+
+.span-titulo{
+        
+    content: '';
+    width: 4em;
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    background-color: #a7753a;
+    margin-right: 10px;
+    vertical-align: middle;
+    top: -1px;
+    }
+
+.intro-padding{
+    padding-bottom: 4em;
+   
+}
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-
+.card-img{
+    height: 225px; width: 100%; display: block;
+}
+.con-fit{
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
 .cover-portada{
     background-size: cover;
     background-image: url("img/portada.jpg") !important;
     background-position-x: center;
     background-position-y: center;
+}
+.cover-footer{
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-image: url("img/footer.jpg") !important;
+   
+}
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .nav-color{
     background-color: rgba(47,47,47,0.8);
@@ -81,6 +117,10 @@
     }
     .display-nav-movil{
         display: block;
+    }
+    .con-fit{
+        padding-left: 1em !important;
+        padding-right: 1em !important;
     }
 }
 
