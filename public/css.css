@@ -17,6 +17,8 @@ body{
 
 .intro-padding{
     padding-bottom: 4em;
+    margin-bottom: auto;
+    margin-top: auto;
    
 }
 .navbar-light .navbar-toggler-icon {
