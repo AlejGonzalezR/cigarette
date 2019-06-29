@@ -29,10 +29,18 @@ module.exports = {
                 "css-loader", // translates CSS into CommonJS
                 "sass-loader" // compiles Sass to CSS, using Node Sass by default
             ]
+        },{
+            test: /\.css$/,
+            use: [
+                "style-loader",
+                "css-loader",
+                "sass-loader"
+            ]
         }]
     },
     devServer: {
         historyApiFallback: true,
+        host: '0.0.0.0',
         port: 5000,
         proxy: {
             "/api-rest": {
