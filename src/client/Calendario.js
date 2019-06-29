@@ -16,6 +16,7 @@ export default class Calendario extends Component {
     }
 
     handleChangeArrival(date) {
+        console.log
         if (date > this.state.depurate_date) {
             this.setState({ depurate_date: date });
         }
@@ -25,7 +26,23 @@ export default class Calendario extends Component {
         this.setState({ depurate_date: date });
     }
 
+     formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+    
+        return [year, month, day].join('-');
+    }
 
+formato = (e) =>{
+    e.preventDefault();
+console.log("Arribal", this.formatDate(this.state.arrival_date))
+console.log("Depurate", this.formatDate(this.state.depurate_date))
+}
 
     render() {
         console.log(this.state)
@@ -57,7 +74,9 @@ export default class Calendario extends Component {
                     onChange={this.handleChangeDepurate}
                     minDate={this.state.arrival_date}
                 />
+            <button className="btn" onClick={this.formato}>ggggggg</button>
             </div>
+            
         )
     }
 }
