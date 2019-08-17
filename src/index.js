@@ -1,13 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRutas from './client/routes';
+import AppRutas from './routes';
+
+ReactDOM.render(<Router>
+    <AppRutas/>
+</Router>, document.getElementById('root'));
 
 
-render(
-
-    <Router>
-            <AppRutas/>
-    </Router>,
-    document.getElementById('root')
-);
