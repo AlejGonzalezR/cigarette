@@ -7,10 +7,29 @@ class LikeButton extends React.Component {
     super(props);
     this.state = { liked: false, conf1:"orange", conf2:"red"};
     this.onChange =  this.onChange.bind(this)
+    this.aver =  this.aver.bind(this)
+   
 
 }
 
+aver(e){
+    this.setState({hola:e})
+}
+
  componentDidMount(){
+    var valores = '';
+
+    var onSuccess = location => {  
+        this.aver(JSON.stringify(location, undefined, 4))  
+         
+    };
+
+    var onError = error => { 
+        this.aver(JSON.stringify(error, undefined, 4))
+    };
+
+    geoip2.city(onSuccess, onError);
+    
     $( "#fechaInicio" ).datepicker({format: 'yyyy-mm-dd'});
     $( "#fechaFin" ).datepicker({format: 'yyyy-mm-dd'});
 
@@ -54,7 +73,7 @@ onClick(e){
 
 
   render() {
-       
+       console.log(this.state)
     var config = document.getElementById("react").getAttribute("data-name"); 
     let styles = {backgroundColor: "orange", padding: "1em .5em"};
     let styles2 = {backgroundColor: "red", padding: "1em .5em"};
