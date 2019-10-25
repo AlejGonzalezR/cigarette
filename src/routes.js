@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Inicio from './client/views/Inicio/App'
-import PGet from "./client/PGet";
-
+import Inicio from "./client/views/Inicio";
 
 class routes extends Component {
     render() {
@@ -11,8 +9,7 @@ class routes extends Component {
             <React.Fragment>
                 <Switch>
                     <Route path="/" exact component={Inicio} />
-                    <Route path="/pg/:hotel/:fechainicio/:fechafin/:adultos/:ninos/:config" exact component={PGet} />
-                    <Route path="*"  component={Inicio} />
+                  
                 </Switch>
             </React.Fragment>
         );
