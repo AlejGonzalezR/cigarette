@@ -7,7 +7,10 @@ class Inicio extends Component {
 
         return (
             <div>
-               <nav className="white" role="navigation">
+             
+
+  <div id="index-banner" className="parallax-container">
+  <nav className="white" role="navigation">
     <div className="nav-wrapper container">
       <a id="logo-container" href="/" className="brand-logo">Logo</a>
       <ul className="right hide-on-med-and-down">
@@ -20,8 +23,6 @@ class Inicio extends Component {
       <a href="/" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
     </div>
   </nav>
-
-  <div id="index-banner" className="parallax-container">
     <div className="section no-pad-bot">
       <div className="container">
         <br/><br/>
