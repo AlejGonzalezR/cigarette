@@ -12,10 +12,10 @@
 .span-titulo{
         
     content: '';
-    width: 4em;
+    width: 2em;
     position: relative;
     display: inline-block;
-    height: 2px;
+    height: 3px;
     background-color: #a7753a;
     margin-right: 10px;
     vertical-align: middle;
@@ -304,6 +304,9 @@ footer.page-footer {
 .justify-align{
     text-align: justify;
 }
+.center-align{
+    text-align: -webkit-center;
+}
 
 
 @media  (max-width: 599.97px) { 
@@ -322,18 +325,26 @@ footer.page-footer {
 
 
 @media (min-width: 600px) and (max-width: 991.97px) { 
+    .imgsize-intro{
 
+    }
 
 }
 
 
 @media  (min-width: 992px) and (max-width: 1199.97px) { 
-
+    .imgsize-intro{
+                                                                                                                                                                                                         
+    }
 
 }
 
 
 @media  (min-width: 1200px) { 
-
+    .imgsize-intro{
+        width: 100%;
+        height: 24em;
+        object-fit: cover;
+    }
 
 }
