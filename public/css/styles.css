@@ -1,0 +1,103 @@
+.span-titulo{
+        
+    content: '';
+    width: 2em;
+    position: relative;
+    display: inline-block;
+    height: 3px;
+    background-color: #a7753a;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+    top: -1px;
+    } 
+
+.footer-copyright{
+    background-color: unset;
+}
+.cover-footer{
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-image: url("../img/footer.jpg") !important;
+    padding-top: 20px; 
+    color: #fff;
+   
+}
+.nav-transparent{
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    background-color: transparent !important;
+    color: #fff;
+}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+
+@media only screen and (min-width : 993px) {
+    
+  }
+
+  @media only screen and (min-width : 1200px) {
+    .imgsize-intro{
+        width: 100%;
+        height: 24em;
+        object-fit: cover;
+    }
+  }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
+ 
